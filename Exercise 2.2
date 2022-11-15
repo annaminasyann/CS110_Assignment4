@@ -1,0 +1,16 @@
+
+let a = 250;
+let b = 15;
+
+    function gcd(a, b) {
+        let r = 0;
+        while ((a % b) > 0)  {
+          r = a % b;
+          a = b;
+          b = r;
+        }
+        return b;
+      }
+
+let result = gcd(a, b);
+console.log(result);
